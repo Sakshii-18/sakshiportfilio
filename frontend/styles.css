@@ -482,6 +482,9 @@ button, input, textarea, select { font: inherit; }
 .profile-panel span { color: #F5E7D4; font-weight: 800; }
 .profile-panel strong { font-size: 28px; line-height: 1.1; }
 .profile-panel p { color: #F1E8DE; }
+.profile-photo { width: 78px; height: 78px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,.25); box-shadow: 0 8px 20px rgba(0,0,0,.25); }
+.about-photo-space { display: flex; align-items: center; justify-content: center; min-height: 390px; }
+.about-photo { width: 100%; max-width: 340px; aspect-ratio: 1 / 1; border-radius: 16px; object-fit: cover; box-shadow: var(--shadow); border: 1px solid var(--border); }
 
 .whatsapp-float { position: fixed; right: 22px; bottom: 22px; z-index: 45; display: grid; place-items: center; width: 56px; aspect-ratio: 1; color: white; background: #25D366; border-radius: 50%; box-shadow: var(--shadow); font-size: 28px; }
 .premium-footer { padding: clamp(38px, 6vw, 70px) clamp(18px, 5vw, 70px) 28px; color: var(--card); background: var(--text); }
