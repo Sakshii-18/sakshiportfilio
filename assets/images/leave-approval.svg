@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" fill="#F2ECE4"/>
+  <rect x="0" y="0" width="800" height="44" fill="#2C2520"/>
+  <circle cx="22" cy="22" r="6" fill="#B85C6A"/>
+  <circle cx="42" cy="22" r="6" fill="#D1A14A"/>
+  <circle cx="62" cy="22" r="6" fill="#18735B"/>
+  <text x="400" y="28" text-anchor="middle" fill="#F2ECE4" font-family="Arial" font-size="13" font-weight="700">Leave Approval Dashboard</text>
+
+  <rect x="24" y="64" width="160" height="432" rx="10" fill="#2C2520"/>
+  <text x="44" y="98" fill="#F2ECE4" font-family="Arial" font-size="14" font-weight="800">Sakshi Portal</text>
+  <rect x="40" y="124" width="128" height="34" rx="8" fill="#8B7355"/>
+  <text x="56" y="146" fill="#fff" font-family="Arial" font-size="12" font-weight="700">My Requests</text>
+  <rect x="40" y="168" width="128" height="34" rx="8" fill="#3a322a"/>
+  <text x="56" y="190" fill="#cbbfae" font-family="Arial" font-size="12">Approvals</text>
+  <rect x="40" y="212" width="128" height="34" rx="8" fill="#3a322a"/>
+  <text x="56" y="234" fill="#cbbfae" font-family="Arial" font-size="12">Notifications</text>
+  <rect x="40" y="256" width="128" height="34" rx="8" fill="#3a322a"/>
+  <text x="56" y="278" fill="#cbbfae" font-family="Arial" font-size="12">History</text>
+
+  <rect x="206" y="64" width="570" height="100" rx="10" fill="#fff" stroke="#E7E1D8"/>
+  <text x="228" y="98" fill="#2C2520" font-family="Arial" font-size="16" font-weight="800">Submit Leave Request</text>
+  <text x="228" y="124" fill="#6B645D" font-family="Arial" font-size="12">Reason, dates and supporting note submitted for multi-level review.</text>
+  <rect x="640" y="92" width="110" height="36" rx="8" fill="#18735B"/>
+  <text x="695" y="115" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="700">Submit</text>
+
+  <rect x="206" y="180" width="570" height="316" rx="10" fill="#fff" stroke="#E7E1D8"/>
+  <text x="228" y="212" fill="#2C2520" font-family="Arial" font-size="14" font-weight="800">Approval Workflow</text>
+
+  <g font-family="Arial" font-size="11" font-weight="800">
+    <rect x="228" y="240" width="120" height="42" rx="21" fill="#F5E7D4"/>
+    <text x="288" y="266" text-anchor="middle" fill="#604A2F">Student</text>
+
+    <rect x="372" y="240" width="120" height="42" rx="21" fill="#DCEBE4"/>
+    <text x="432" y="266" text-anchor="middle" fill="#155B47">Teacher</text>
+
+    <rect x="516" y="240" width="120" height="42" rx="21" fill="#E2EAF3"/>
+    <text x="576" y="266" text-anchor="middle" fill="#2A4A6E">HOD</text>
+
+    <rect x="650" y="240" width="100" height="42" rx="21" fill="#2C2520"/>
+    <text x="700" y="266" text-anchor="middle" fill="#fff">Director</text>
+  </g>
+  <line x1="348" y1="261" x2="372" y2="261" stroke="#B9AA98" stroke-width="3"/>
+  <line x1="492" y1="261" x2="516" y2="261" stroke="#B9AA98" stroke-width="3"/>
+  <line x1="636" y1="261" x2="650" y2="261" stroke="#B9AA98" stroke-width="3"/>
+
+  <rect x="228" y="312" width="524" height="46" rx="8" fill="#F8F5F0"/>
+  <text x="244" y="340" fill="#2C2520" font-family="Arial" font-size="12" font-weight="700">Medical Leave — 12 Jun to 14 Jun</text>
+  <rect x="664" y="324" width="76" height="22" rx="11" fill="#DCEBE4"/>
+  <text x="702" y="339" text-anchor="middle" fill="#155B47" font-family="Arial" font-size="10" font-weight="800">Approved</text>
+
+  <rect x="228" y="366" width="524" height="46" rx="8" fill="#F8F5F0"/>
+  <text x="244" y="394" fill="#2C2520" font-family="Arial" font-size="12" font-weight="700">Family Function — 02 Jul to 03 Jul</text>
+  <rect x="664" y="378" width="76" height="22" rx="11" fill="#F5E7D4"/>
+  <text x="702" y="393" text-anchor="middle" fill="#604A2F" font-family="Arial" font-size="10" font-weight="800">Pending</text>
+
+  <rect x="228" y="420" width="524" height="46" rx="8" fill="#F8F5F0"/>
+  <text x="244" y="448" fill="#2C2520" font-family="Arial" font-size="12" font-weight="700">Workshop — 18 Jul to 19 Jul</text>
+  <rect x="664" y="432" width="76" height="22" rx="11" fill="#FBE3E6"/>
+  <text x="702" y="447" text-anchor="middle" fill="#8A2032" font-family="Arial" font-size="10" font-weight="800">Rejected</text>
+</svg>

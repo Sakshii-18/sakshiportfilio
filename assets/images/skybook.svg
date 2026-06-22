@@ -1,0 +1,63 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" fill="#E8F0FA"/>
+  <rect x="0" y="0" width="800" height="44" fill="#2C2520"/>
+  <circle cx="22" cy="22" r="6" fill="#B85C6A"/>
+  <circle cx="42" cy="22" r="6" fill="#D1A14A"/>
+  <circle cx="62" cy="22" r="6" fill="#18735B"/>
+  <text x="400" y="28" text-anchor="middle" fill="#F2ECE4" font-family="Arial" font-size="13" font-weight="700">SkyBook · Flight Search &amp; Booking</text>
+
+  <rect x="40" y="70" width="720" height="84" rx="10" fill="#fff" stroke="#E7E1D8"/>
+  <text x="64" y="96" fill="#6B645D" font-family="Arial" font-size="11" font-weight="700">FROM</text>
+  <text x="64" y="122" fill="#2C2520" font-family="Arial" font-size="18" font-weight="800">PUNE</text>
+  <path d="M270 108 L300 100 L300 116 Z" fill="#355C8C"/>
+  <line x1="180" y1="108" x2="300" y2="108" stroke="#355C8C" stroke-width="2" stroke-dasharray="6,6"/>
+  <text x="340" y="96" fill="#6B645D" font-family="Arial" font-size="11" font-weight="700">TO</text>
+  <text x="340" y="122" fill="#2C2520" font-family="Arial" font-size="18" font-weight="800">GOA</text>
+  <rect x="470" y="84" width="140" height="40" rx="8" fill="#F2ECE4"/>
+  <text x="540" y="108" text-anchor="middle" fill="#2C2520" font-family="Arial" font-size="12" font-weight="700">21 Jun 2026</text>
+  <rect x="628" y="84" width="112" height="40" rx="8" fill="#355C8C"/>
+  <text x="684" y="108" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="800">Search</text>
+
+  <rect x="40" y="172" width="430" height="324" rx="10" fill="#fff" stroke="#E7E1D8"/>
+  <text x="62" y="202" fill="#2C2520" font-family="Arial" font-size="14" font-weight="800">Select Your Seat</text>
+  <g>
+    <!-- seat grid -->
+    <rect x="62" y="222" width="26" height="26" rx="5" fill="#DCEBE4"/>
+    <rect x="96" y="222" width="26" height="26" rx="5" fill="#DCEBE4"/>
+    <rect x="148" y="222" width="26" height="26" rx="5" fill="#B85C6A"/>
+    <rect x="182" y="222" width="26" height="26" rx="5" fill="#DCEBE4"/>
+
+    <rect x="62" y="256" width="26" height="26" rx="5" fill="#DCEBE4"/>
+    <rect x="96" y="256" width="26" height="26" rx="5" fill="#2C2520"/>
+    <rect x="148" y="256" width="26" height="26" rx="5" fill="#DCEBE4"/>
+    <rect x="182" y="256" width="26" height="26" rx="5" fill="#DCEBE4"/>
+
+    <rect x="62" y="290" width="26" height="26" rx="5" fill="#DCEBE4"/>
+    <rect x="96" y="290" width="26" height="26" rx="5" fill="#DCEBE4"/>
+    <rect x="148" y="290" width="26" height="26" rx="5" fill="#DCEBE4"/>
+    <rect x="182" y="290" width="26" height="26" rx="5" fill="#DCEBE4"/>
+  </g>
+  <rect x="62" y="334" width="14" height="14" rx="3" fill="#2C2520"/>
+  <text x="84" y="345" fill="#6B645D" font-family="Arial" font-size="11">Selected</text>
+  <rect x="62" y="358" width="14" height="14" rx="3" fill="#B85C6A"/>
+  <text x="84" y="369" fill="#6B645D" font-family="Arial" font-size="11">Booked</text>
+
+  <rect x="62" y="396" width="346" height="76" rx="8" fill="#F2ECE4"/>
+  <text x="80" y="422" fill="#2C2520" font-family="Arial" font-size="12" font-weight="800">Passenger Details</text>
+  <text x="80" y="444" fill="#6B645D" font-family="Arial" font-size="11">Name, age, seat 4B confirmed.</text>
+  <rect x="304" y="430" width="86" height="30" rx="7" fill="#18735B"/>
+  <text x="347" y="450" text-anchor="middle" fill="#fff" font-family="Arial" font-size="11" font-weight="800">Confirm</text>
+
+  <rect x="494" y="172" width="266" height="324" rx="10" fill="#2C2520"/>
+  <text x="518" y="206" fill="#F5E7D4" font-family="Arial" font-size="12" font-weight="800">E-TICKET</text>
+  <text x="518" y="240" fill="#fff" font-family="Arial" font-size="22" font-weight="900">PNR: SB48217</text>
+  <line x1="518" y1="260" x2="736" y2="260" stroke="#5D4D3F"/>
+  <text x="518" y="288" fill="#cbbfae" font-family="Arial" font-size="11">Passenger</text>
+  <text x="518" y="308" fill="#fff" font-family="Arial" font-size="14" font-weight="700">Sample Traveller</text>
+  <text x="518" y="338" fill="#cbbfae" font-family="Arial" font-size="11">Route</text>
+  <text x="518" y="358" fill="#fff" font-family="Arial" font-size="14" font-weight="700">PUNE → GOA</text>
+  <text x="518" y="388" fill="#cbbfae" font-family="Arial" font-size="11">Seat</text>
+  <text x="518" y="408" fill="#fff" font-family="Arial" font-size="14" font-weight="700">4B · Window</text>
+  <rect x="518" y="436" width="218" height="36" rx="8" fill="#355C8C"/>
+  <text x="627" y="459" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="800">Download Ticket</text>
+</svg>

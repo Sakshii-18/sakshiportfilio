@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sakshi Suryawanshi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" data-scroll-progress></div>
+  <header class="site-header">
+    <a class="brand" href="index.html">Sakshi<span>Suryawanshi</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="resume.pdf" download class="btn-nav-resume">Resume</a><button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="quick-connect contact-connect reveal">
+      <p class="eyebrow">Quick Connect</p>
+      <div class="connect-icons">
+        <a data-tooltip="View Code" href="https://github.com/Sakshii-18" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+        <a data-tooltip="Connect" href="https://www.linkedin.com/in/sakshi-suryawanshii/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+        <a data-tooltip="Chat Now" href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+        <a data-tooltip="Send Email" href="mailto:ms.sakshisuryawanshi18@gmail.com"><i class="fa-solid fa-envelope"></i><span>Gmail</span></a>
+        <a data-tooltip="Download Resume" href="resume.pdf" download><i class="fa-solid fa-file-pdf"></i><span>Resume PDF</span></a>
+        <a data-tooltip="Visit Website" href="https://sakshi-suryawanshiportfolio.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i><span>Portfolio</span></a>
+      </div>
+    </section>
+
+    <section class="contact-premium">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Freelance Enquiry</p>
+        <h1>Let's Build Something Together</h1>
+        <p>Tell me about your project, goals and requirements. I'll review your enquiry and get back to you.</p>
+        <div class="step-flow">
+          <span><i class="fa-solid fa-pen-to-square"></i>Submit Enquiry</span>
+          <span><i class="fa-solid fa-magnifying-glass"></i>Requirement Review</span>
+          <span><i class="fa-solid fa-comments"></i>Discussion</span>
+          <span><i class="fa-solid fa-rocket"></i>Project Development</span>
+        </div>
+        <div class="trust-list">
+          <span>Responsive Websites</span><span>Java Full Stack Projects</span><span>Management Systems</span><span>Database Solutions</span><span>Student & Business Projects</span>
+        </div>
+        <div class="response-card">
+          <h3>Typical Response Time</h3>
+          <p>WhatsApp: Within 24 Hours</p>
+          <p>Email: 1-2 Business Days</p>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="enquiryForm" novalidate>
+        <div class="form-status" data-form-status hidden></div>
+        <label>Full Name<input type="text" name="name" placeholder="Your full name" autocomplete="name"><small data-error-for="name"></small></label>
+        <label>Email Address<input type="email" name="email" placeholder="you@example.com" autocomplete="email"><small data-error-for="email"></small></label>
+        <label>Phone Number<input type="tel" name="phone" placeholder="10 digit phone number" autocomplete="tel"><small data-error-for="phone"></small></label>
+        <label>Company / Organization Name<input type="text" name="organization" placeholder="Optional"></label>
+        <label>Service Required<select name="service"><option value="">Select Service</option><option>Portfolio Website</option><option>Business Website</option><option>Management System</option><option>Billing System</option><option>Airline Reservation System</option><option>Java Full Stack Project</option><option>Database Design</option><option>College Project</option><option>Other</option></select><small data-error-for="service"></small></label>
+        <fieldset><legend>Project Type</legend><label><input type="radio" name="projectType" value="Personal"> Personal</label><label><input type="radio" name="projectType" value="Academic"> Academic</label><label><input type="radio" name="projectType" value="Business"> Business</label><label><input type="radio" name="projectType" value="Startup"> Startup</label></fieldset>
+        <label>Project Budget<select name="budget"><option value="">Select budget range</option><option>Below Rs.5,000</option><option>Rs.5,000 - Rs.10,000</option><option>Rs.10,000 - Rs.25,000</option><option>Rs.25,000+</option></select><small data-error-for="budget"></small></label>
+        <label>Project Timeline<select name="timeline"><option value="">Select timeline</option><option>Urgent</option><option>1 Week</option><option>2-4 Weeks</option><option>1 Month+</option></select></label>
+        <fieldset><legend>Features Required</legend><label><input type="checkbox" name="features" value="Responsive Design"> Responsive Design</label><label><input type="checkbox" name="features" value="Admin Panel"> Admin Panel</label><label><input type="checkbox" name="features" value="Database Integration"> Database Integration</label><label><input type="checkbox" name="features" value="Authentication/Login"> Authentication/Login</label><label><input type="checkbox" name="features" value="Dashboard"> Dashboard</label><label><input type="checkbox" name="features" value="Reports"> Reports</label><label><input type="checkbox" name="features" value="PDF Generation"> PDF Generation</label><label><input type="checkbox" name="features" value="API Integration"> API Integration</label><label><input type="checkbox" name="features" value="Email Notifications"> Email Notifications</label><label><input type="checkbox" name="features" value="Other"> Other</label></fieldset>
+        <fieldset><legend>Preferred Contact Method</legend><label><input type="radio" name="contactMethod" value="WhatsApp"> WhatsApp</label><label><input type="radio" name="contactMethod" value="Email"> Email</label><label><input type="radio" name="contactMethod" value="Phone Call"> Phone Call</label></fieldset>
+        <label>Project Description<textarea name="message" rows="5" placeholder="Describe your project idea, goals, features and requirements."></textarea><small data-error-for="message"></small></label>
+        <label>Attach Reference Link<input type="url" name="referenceLink" placeholder="https://example.com"></label>
+        <label class="terms-row"><input type="checkbox" name="terms"> I confirm the information provided is correct.<small data-error-for="terms"></small></label>
+        <button class="btn primary" type="submit">Send Enquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <div class="toast" data-toast hidden></div>
+  <a class="whatsapp-float" href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <footer class="premium-footer">
+    <div class="footer-grid">
+      <section><h2>Sakshi Suryawanshi</h2><p>Building practical software solutions with Java, Spring Boot and MySQL.</p><p class="status-dot">Current Status: Learning Java Full Stack Development and building real-world projects.</p></section>
+      <section><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#skills">Skills</a><a href="projects.html">Projects</a><a href="index.html">Portfolio</a><a href="services.html">Services</a><a href="contact.html">Contact</a></section>
+      <section><h3>Featured Projects</h3><a href="leave-approval.html">Leave Approval System</a><a href="cafe-billing.html">Cafe Billing System</a><a href="skybook.html">SkyBook Airline Reservation</a></section>
+      <section><h3>Connect</h3><div class="footer-icons"><a href="https://github.com/Sakshii-18" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/sakshi-suryawanshii/" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a><a href="mailto:ms.sakshisuryawanshi18@gmail.com"><i class="fa-solid fa-envelope"></i></a><a href="https://sakshi-suryawanshiportfolio.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></div></section>
+    </div>
+    <div class="footer-badges"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Spring Boot</span><span>MySQL</span><span>Git</span></div>
+    <button class="back-top" data-back-top>↑ Top</button>
+    <p class="copyright">Designed and Developed by Sakshi Suryawanshi. Built with HTML, CSS, JavaScript, Spring Boot and MySQL. © 2026 All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

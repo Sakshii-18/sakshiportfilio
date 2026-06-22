@@ -1,0 +1,63 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" fill="#F5EFE8"/>
+  <rect x="0" y="0" width="800" height="44" fill="#2C2520"/>
+  <circle cx="22" cy="22" r="6" fill="#B85C6A"/>
+  <circle cx="42" cy="22" r="6" fill="#D1A14A"/>
+  <circle cx="62" cy="22" r="6" fill="#18735B"/>
+  <text x="400" y="28" text-anchor="middle" fill="#F2ECE4" font-family="Arial" font-size="13" font-weight="700">Cafe Billing &amp; Invoice Console</text>
+
+  <rect x="36" y="68" width="320" height="428" rx="10" fill="#fff" stroke="#E7E1D8"/>
+  <text x="56" y="98" fill="#2C2520" font-family="Arial" font-size="14" font-weight="800">Menu</text>
+  <g font-family="Arial" font-size="12">
+    <rect x="56" y="116" width="280" height="40" rx="8" fill="#F2ECE4"/>
+    <text x="70" y="140" fill="#2C2520" font-weight="700">Cold Coffee</text>
+    <text x="310" y="140" text-anchor="end" fill="#6B645D">₹120</text>
+
+    <rect x="56" y="164" width="280" height="40" rx="8" fill="#F2ECE4"/>
+    <text x="70" y="188" fill="#2C2520" font-weight="700">Veg Sandwich</text>
+    <text x="310" y="188" text-anchor="end" fill="#6B645D">₹90</text>
+
+    <rect x="56" y="212" width="280" height="40" rx="8" fill="#F2ECE4"/>
+    <text x="70" y="236" fill="#2C2520" font-weight="700">Margherita Pizza</text>
+    <text x="310" y="236" text-anchor="end" fill="#6B645D">₹220</text>
+
+    <rect x="56" y="260" width="280" height="40" rx="8" fill="#F2ECE4"/>
+    <text x="70" y="284" fill="#2C2520" font-weight="700">Cappuccino</text>
+    <text x="310" y="284" text-anchor="end" fill="#6B645D">₹110</text>
+  </g>
+  <rect x="56" y="320" width="280" height="40" rx="8" fill="#18735B"/>
+  <text x="196" y="345" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="800">+ Add to Order</text>
+
+  <rect x="56" y="380" width="280" height="96" rx="8" fill="#F8F5F0"/>
+  <text x="72" y="404" fill="#2C2520" font-family="Arial" font-size="11" font-weight="800">Sales Today</text>
+  <text x="72" y="438" fill="#2C2520" font-family="Arial" font-size="24" font-weight="900">₹8,640</text>
+  <text x="72" y="460" fill="#6B645D" font-family="Arial" font-size="11">36 orders billed</text>
+
+  <rect x="380" y="68" width="384" height="428" rx="10" fill="#2C2520"/>
+  <text x="404" y="100" fill="#F5E7D4" font-family="Arial" font-size="13" font-weight="800">INVOICE #CB-1042</text>
+  <line x1="404" y1="116" x2="740" y2="116" stroke="#5D4D3F"/>
+
+  <g font-family="Arial" font-size="12" fill="#fff">
+    <text x="404" y="148">Cold Coffee x2</text>
+    <text x="740" y="148" text-anchor="end">₹240</text>
+    <text x="404" y="178">Veg Sandwich x1</text>
+    <text x="740" y="178" text-anchor="end">₹90</text>
+    <text x="404" y="208">Margherita Pizza x1</text>
+    <text x="740" y="208" text-anchor="end">₹220</text>
+  </g>
+  <line x1="404" y1="228" x2="740" y2="228" stroke="#5D4D3F"/>
+  <text x="404" y="256" fill="#cbbfae" font-family="Arial" font-size="12">Subtotal</text>
+  <text x="740" y="256" text-anchor="end" fill="#fff" font-family="Arial" font-size="12">₹550</text>
+  <text x="404" y="280" fill="#cbbfae" font-family="Arial" font-size="12">GST (5%)</text>
+  <text x="740" y="280" text-anchor="end" fill="#fff" font-family="Arial" font-size="12">₹27.50</text>
+  <line x1="404" y1="298" x2="740" y2="298" stroke="#5D4D3F"/>
+  <text x="404" y="330" fill="#F5E7D4" font-family="Arial" font-size="16" font-weight="900">Total Payable</text>
+  <text x="740" y="330" text-anchor="end" fill="#F5E7D4" font-family="Arial" font-size="16" font-weight="900">₹577.50</text>
+
+  <rect x="404" y="356" width="336" height="40" rx="8" fill="#355C8C"/>
+  <text x="572" y="381" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12" font-weight="800">Generate &amp; Print Invoice</text>
+
+  <rect x="404" y="412" width="336" height="60" rx="8" fill="#332A22"/>
+  <text x="420" y="436" fill="#cbbfae" font-family="Arial" font-size="11">Payment Mode</text>
+  <text x="420" y="458" fill="#fff" font-family="Arial" font-size="13" font-weight="700">UPI · Paid</text>
+</svg>
