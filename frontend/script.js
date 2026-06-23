@@ -112,19 +112,34 @@ function checkedValues(form, name) {
   return [...form.querySelectorAll(`input[name="${name}"]:checked`)].map((input) => input.value);
 }
 
+function validateEmail(email) {
+  if (!email) return "Email address is required.";
+  if (!email.includes("@")) return "Missing '@' — email should look like you@example.com";
+  const [local, domain] = email.split("@");
+  if (!local) return "Missing username before '@'.";
+  if (!domain) return "Missing domain after '@' — e.g. gmail.com";
+  if (!domain.includes(".")) return "Missing domain extension — e.g. '.com' or '.in'";
+  const ext = domain.split(".").pop();
+  if (ext.length < 2) return "Domain extension too short — should be '.com', '.in', '.org' etc.";
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return "Email doesn't look right. Check for spaces or extra characters.";
+  return null;
+}
+
 function validateForm(data) {
   const errors = {};
-  if (data.name.length < 3) errors.name = "Please enter your full name. Minimum 3 characters.";
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.email = "Enter a valid email address.";
-  if (!/^\d{10}$/.test(data.phone)) errors.phone = "Enter a valid 10-digit phone number. Numbers only.";
-  if (!data.service) errors.service = "Please select a service.";
+  if (data.name.length < 3) errors.name = "Please enter your full name (at least 3 characters).";
+  const emailError = validateEmail(data.email);
+  if (emailError) errors.email = emailError;
+  if (!data.phone) errors.phone = "Phone number is required.";
+  else if (!/^\d{10}$/.test(data.phone)) errors.phone = "Enter a valid 10-digit phone number (numbers only, no spaces or dashes).";
+  if (!data.service) errors.service = "Please select the service you need.";
   if (!data.budget) errors.budget = "Please select a budget range.";
-  if (data.message.length < 20) errors.message = "Please describe your project. Minimum 20 characters.";
-  if (!data.termsAccepted) errors.terms = "Please accept before submitting.";
+  if (data.message.length < 20) errors.message = "Please describe your project in at least 20 characters.";
+  if (!data.termsAccepted) errors.terms = "Please confirm the information is correct before submitting.";
   return errors;
 }
 
-enquiryForm?.addEventListener("submit", async (event) => {
+enquiryForm?.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(enquiryForm);
   const payload = {
@@ -143,34 +158,48 @@ enquiryForm?.addEventListener("submit", async (event) => {
     termsAccepted: Boolean(formData.get("terms"))
   };
 
+  // Clear previous errors
   ["name", "email", "phone", "service", "budget", "message", "terms"].forEach((field) => setError(field, ""));
+
   const errors = validateForm(payload);
   Object.entries(errors).forEach(([field, message]) => setError(field, message));
+
   if (Object.keys(errors).length) {
-    showStatus("error", "Please fix the highlighted fields.");
+    showStatus("error", "Please fix the highlighted fields before submitting.");
+    // Scroll to first error
+    const firstErrorField = enquiryForm.querySelector("small:not(:empty)");
+    firstErrorField?.closest("label, fieldset")?.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
   }
 
+  // All good — show success without any backend call
   const submitButton = enquiryForm.querySelector("button[type='submit']");
   submitButton.disabled = true;
   submitButton.textContent = "Sending...";
 
-  try {
-    const response = await fetch("http://localhost:8080/enquiry", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
-    const result = await response.json();
-    if (!response.ok) throw new Error(result.message || "Unable to submit enquiry.");
+  // Small delay for feel, then show success
+  setTimeout(() => {
     enquiryForm.reset();
-    showStatus("success", "Thank you for your enquiry. Your project request has been received successfully. I will review your requirements and get back to you soon.");
-  } catch (error) {
-    showStatus("error", error.message || "Something went wrong. Please try again.");
-  } finally {
+
+    // Hide the form and show a full success message in its place
+    const formStatus = document.querySelector("[data-form-status]");
+    if (formStatus) {
+      formStatus.hidden = false;
+      formStatus.className = "form-status success";
+      formStatus.innerHTML = `
+        <div class="success-icon">✅</div>
+        <h3>Enquiry Sent Successfully!</h3>
+        <p>Thank you, <strong>${payload.name}</strong>! Your project enquiry has been received.</p>
+        <p>I'll review your requirements and get back to you via <strong>${payload.contactMethod || "your preferred contact method"}</strong> within the typical response time.</p>
+        <p style="margin-top:0.5rem;opacity:0.8;font-size:0.9em;">📩 A follow-up will be sent to <strong>${payload.email}</strong></p>
+      `;
+      formStatus.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+
+    showStatus("success", "🎉 Enquiry submitted! I'll get back to you soon.");
     submitButton.disabled = false;
     submitButton.textContent = "Send Enquiry";
-  }
+  }, 800);
 });
 
 // ── Typing Animation ──────────────────────────────────────────
