@@ -485,8 +485,8 @@ button, input, textarea, select { font: inherit; }
 .about-hero { grid-template-columns: minmax(0, 1fr) 380px; }
 .portrait-visual { position: relative; min-height: 390px; }
 .orbit { position: absolute; inset: 20px; border: 2px dashed #796d5d; border-radius: 50%; animation: spin 18s linear infinite; }
-.profile-panel { position: absolute; inset: 86px 28px; display: grid; align-content: center; gap: 10px; padding: 28px; color: var(--card); background: linear-gradient(135deg, var(--text), #5D4D3F); border-radius: 8px; box-shadow: var(--shadow); }
-.profile-panel span { color: #352a1a; font-weight: 800; }
+.profile-panel { position: absolute; inset: 86px 28px; display: grid; align-content: center; gap: 10px; padding: 28px; color: var(--card); background: linear-gradient(135deg, var(--text), #c9b8aa); border-radius: 8px; box-shadow: var(--shadow); }
+.profile-panel span { color: #8c7859; font-weight: 800; }
 .profile-panel p { color: #211f1d; }
 .profile-photo { width: 78px; height: 78px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,.25); box-shadow: 0 8px 20px rgba(0,0,0,.25); }
 .about-photo-space { display: flex; align-items: center; justify-content: center; min-height: 390px; }
