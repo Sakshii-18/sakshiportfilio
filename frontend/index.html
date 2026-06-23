@@ -1,189 +1,359 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sakshi Suryawanshi | Java Full Stack Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakshi Suryawanshi | Java Full Stack Portfolio</title>
 
-  <script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"Person",
- "name":"Sakshi Suryawanshi",
- "jobTitle":"Java Full Stack Developer",
- "knowsAbout":[
-   "Java",
-   "Spring Boot",
-   "MySQL",
-   "HTML",
-   "CSS",
-   "JavaScript"
- ],
- "alumniOf":"Bharati Vidyapeeth",
- "url":"https://yourdomain.com"
-}
-</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sakshi Suryawanshi",
+        "jobTitle": "Java Full Stack Developer",
+        "knowsAbout": [
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "alumniOf": "Bharati Vidyapeeth",
+        "url": "https://yourdomain.com"
+      }
+    </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="scroll-progress" data-scroll-progress></div>
-  <header class="site-header">
-    <a class="brand" href="index.html">Sakshi<span>Suryawanshi</span></a>
-    <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="resume.pdf" download class="btn-nav-resume">Resume</a>
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
-    </nav>
-  </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" data-scroll-progress></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">Sakshi<span>Suryawanshi</span></a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.pdf" download class="btn-nav-resume">Resume</a>
+        <button
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Toggle dark/light mode"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="typing-text" data-typing></span></p>
-        <h1>Building practical web applications, management systems and business solutions.</h1>
-        <p class="hero-text">Hi, I'm Sakshi Suryawanshi — a BCA student and Java Full Stack learner building real-world projects using Java, Spring Boot, MySQL and modern web technologies.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="projects.html">Explore Projects</a>
-          <a class="btn ghost" href="services.html">View Services</a>
-        </div>
-        <div class="metric-row tech-badges">
-          <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>GitHub</span>
-        </div>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="hero-visual-stats">
-          <div><strong>3</strong><span>Projects Built</span></div>
-          <div><strong>6+</strong><span>Tech Tools</span></div>
-        </div>
-        <div class="hero-visual-list">
-          <div><i class="fa-solid fa-server"></i> Spring Boot REST APIs</div>
-          <div><i class="fa-solid fa-database"></i> MySQL database design</div>
-          <div><i class="fa-solid fa-display"></i> Responsive frontend builds</div>
-          <div><i class="fa-brands fa-github"></i> Version-controlled on GitHub</div>
-        </div>
-        <div class="hero-visual-card">
-          <h3>Currently Learning</h3>
-          <p>Deepening Spring Boot + MySQL integration while preparing for MCA.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="featured-work" id="work">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Featured Work</p>
-        <h2>Three complete projects, each designed as a real software system.</h2>
-        <p>Explore workflow automation, reservation logic and business billing through professional case studies.</p>
-      </div>
-      <div class="featured-project-grid reveal">
-        <a class="featured-project-card" href="leave-approval.html">
-          <div class="project-thumb leave-screen"></div>
-          <div class="project-card-body">
-            <h3>Leave Approval Management System</h3>
-            <p>Multi-level approval workflow for student leave requests.</p>
-            <div class="tech-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Spring Boot</span><span>MySQL</span></div>
-            <strong>View Case Study -></strong>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="typing-text" data-typing></span></p>
+          <h1>
+            Building practical web applications, management systems and business
+            solutions.
+          </h1>
+          <p class="hero-text">
+            Hi, I'm Sakshi Suryawanshi — a BCA student and Java Full Stack
+            learner building real-world projects using Java, Spring Boot, MySQL
+            and modern web technologies.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="projects.html">Explore Projects</a>
+            <a class="btn ghost" href="services.html">View Services</a>
           </div>
-        </a>
-        <a class="featured-project-card" href="skybook.html">
-          <div class="project-thumb sky-screen"></div>
-          <div class="project-card-body">
-            <h3>SkyBook Airline Reservation System</h3>
-            <p>Flight search, seat selection, PNR generation and tickets.</p>
-            <div class="tech-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Spring Boot</span><span>MySQL</span></div>
-            <strong>View Case Study -></strong>
+          <div class="metric-row tech-badges">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span
+            ><span>JavaScript</span><span>HTML</span><span>CSS</span
+            ><span>GitHub</span>
           </div>
-        </a>
-        <a class="featured-project-card" href="cafe-billing.html">
-          <div class="project-thumb cafe-screen"></div>
-          <div class="project-card-body">
-            <h3>Cafe Billing Management System</h3>
-            <p>Digital billing with GST, invoices and sales tracking.</p>
-            <div class="tech-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Spring Boot</span><span>MySQL</span></div>
-            <strong>View Case Study -></strong>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-visual-stats">
+            <div><strong>3</strong><span>Projects Built</span></div>
+            <div><strong>6+</strong><span>Tech Tools</span></div>
           </div>
-        </a>
-      </div>
-    </section>
+          <div class="hero-visual-list">
+            <div><i class="fa-solid fa-server"></i> Spring Boot REST APIs</div>
+            <div>
+              <i class="fa-solid fa-database"></i> MySQL database design
+            </div>
+            <div>
+              <i class="fa-solid fa-display"></i> Responsive frontend builds
+            </div>
+            <div>
+              <i class="fa-brands fa-github"></i> Version-controlled on GitHub
+            </div>
+          </div>
+          <div class="hero-visual-card">
+            <h3>Currently Learning</h3>
+            <p>
+              Deepening Spring Boot + MySQL integration while preparing for MCA.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section id="skills" class="stack-section">
+      <section class="featured-work" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Work</p>
+          <h2>
+            Three complete projects, each designed as a real software system.
+          </h2>
+          <p>
+            Explore workflow automation, reservation logic and business billing
+            through professional case studies.
+          </p>
+        </div>
+        <div class="featured-project-grid reveal">
+          <a class="featured-project-card" href="leave-approval.html">
+            <div class="project-thumb leave-screen"></div>
+            <div class="project-card-body">
+              <h3>Leave Approval Management System</h3>
+              <p>Multi-level approval workflow for student leave requests.</p>
+              <div class="tech-pills">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Spring Boot</span><span>MySQL</span>
+              </div>
+              <strong>View Case Study -></strong>
+            </div>
+          </a>
+          <a class="featured-project-card" href="skybook.html">
+            <div class="project-thumb sky-screen"></div>
+            <div class="project-card-body">
+              <h3>SkyBook Airline Reservation System</h3>
+              <p>Flight search, seat selection, PNR generation and tickets.</p>
+              <div class="tech-pills">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Spring Boot</span><span>MySQL</span>
+              </div>
+              <strong>View Case Study -></strong>
+            </div>
+          </a>
+          <a class="featured-project-card" href="cafe-billing.html">
+            <div class="project-thumb cafe-screen"></div>
+            <div class="project-card-body">
+              <h3>Cafe Billing Management System</h3>
+              <p>Digital billing with GST, invoices and sales tracking.</p>
+              <div class="tech-pills">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Spring Boot</span><span>MySQL</span>
+              </div>
+              <strong>View Case Study -></strong>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="stack-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Tech Stack Summary</p>
+          <h2>Tools I use to build complete web systems.</h2>
+        </div>
+        <div class="stack-grid reveal">
+          <article>
+            <i class="fa-solid fa-code"></i>
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript</p>
+          </article>
+          <article>
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend</h3>
+            <p>Core Java, Advanced Java, Spring Boot</p>
+          </article>
+          <article>
+            <i class="fa-solid fa-database"></i>
+            <h3>Database</h3>
+            <p>MySQL</p>
+          </article>
+          <article>
+            <i class="fa-brands fa-github"></i>
+            <h3>Version Control</h3>
+            <p>Git, GitHub</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lab-band" id="about-band">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I Build</p>
+          <h2>Three projects, three different real-world problem areas.</h2>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card reveal">
+            <span>01</span>
+            <h3>Workflow Automation</h3>
+            <p>Leave Approval Management System</p>
+          </article>
+          <article class="lab-card reveal">
+            <span>02</span>
+            <h3>Reservation Logic</h3>
+            <p>SkyBook Airline Reservation System</p>
+          </article>
+          <article class="lab-card reveal">
+            <span>03</span>
+            <h3>Business Operations</h3>
+            <p>Cafe Billing Management System</p>
+          </article>
+          <article class="lab-card reveal">
+            <span>04</span>
+            <h3>Client Services</h3>
+            <p>Portfolio, business, database, and management solutions.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="testimonials-section" id="testimonials">
       <div class="section-heading reveal">
-        <p class="eyebrow">Tech Stack Summary</p>
-        <h2>Tools I use to build complete web systems.</h2>
+        <p class="eyebrow">Testimonials</p>
+        <h2>What people say.</h2>
       </div>
-      <div class="stack-grid reveal">
-        <article><i class="fa-solid fa-code"></i><h3>Frontend</h3><p>HTML5, CSS3, JavaScript</p></article>
-        <article><i class="fa-solid fa-server"></i><h3>Backend</h3><p>Core Java, Advanced Java, Spring Boot</p></article>
-        <article><i class="fa-solid fa-database"></i><h3>Database</h3><p>MySQL</p></article>
-        <article><i class="fa-brands fa-github"></i><h3>Version Control</h3><p>Git, GitHub</p></article>
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal">
+          <div class="testimonial-quote">
+            "Sakshi consistently demonstrates a strong understanding of both
+            frontend and backend concepts. Her Leave Approval System showed real
+            practical thinking and clean code structure."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <strong>Prof. Priya Desai</strong
+              ><span>Faculty, BCA Department</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card reveal">
+          <div class="testimonial-quote">
+            "The Cafe Billing System she built for our project submission was
+            well-structured and actually usable. Sakshi has a great eye for both
+            design and database logic."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <strong>Rohit Sharma</strong
+              ><span>Classmate & Project Collaborator</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card reveal">
+          <div class="testimonial-quote">
+            "Her SkyBook project impressed me — the PNR logic and seat
+            availability tracking were handled better than I expected from a
+            college-level project."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <strong>Amit Kulkarni</strong
+              ><span>Senior Developer & Mentor</span>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="lab-band" id="about-band">
-      <div class="section-heading reveal">
-        <p class="eyebrow">What I Build</p>
-        <h2>Three projects, three different real-world problem areas.</h2>
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+    <footer class="premium-footer">
+      <div class="footer-grid">
+        <section>
+          <h2>Sakshi Suryawanshi</h2>
+          <p>
+            Building practical software solutions with Java, Spring Boot and
+            MySQL.
+          </p>
+        </section>
+        <section>
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="index.html#skills">Skills</a
+          ><a href="projects.html">Projects</a><a href="index.html">Portfolio</a
+          ><a href="services.html">Services</a
+          ><a href="contact.html">Contact</a>
+        </section>
+        <section>
+          <h3>Featured Projects</h3>
+          <a href="leave-approval.html">Leave Approval System</a
+          ><a href="skybook.html">SkyBook Airline Reservation</a
+          ><a href="cafe-billing.html">Cafe Billing System</a>
+        </section>
+        <section>
+          <h3>Connect</h3>
+          <div class="footer-icons">
+            <a
+              href="https://github.com/Sakshii-18"
+              aria-label="GitHub"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i></a
+            ><a
+              href="https://www.linkedin.com/in/sakshi-suryawanshii/"
+              aria-label="LinkedIn"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i></a
+            ><a
+              href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect."
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i></a
+            ><a
+              href="mailto:ms.sakshisuryawanshi18@gmail.com"
+              aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i></a
+            ><a
+              href="https://sakshi-suryawanshiportfolio.netlify.app/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Portfolio"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+          </div>
+
+          <div class="footer-location">
+            <a
+              href="https://maps.google.com/?q=Pune,Maharashtra,India"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+
+               Pune, India
+            </a>
+          </div>
+        </section>
       </div>
-      <div class="lab-grid">
-        <article class="lab-card reveal"><span>01</span><h3>Workflow Automation</h3><p>Leave Approval Management System</p></article>
-        <article class="lab-card reveal"><span>02</span><h3>Reservation Logic</h3><p>SkyBook Airline Reservation System</p></article>
-        <article class="lab-card reveal"><span>03</span><h3>Business Operations</h3><p>Cafe Billing Management System</p></article>
-        <article class="lab-card reveal"><span>04</span><h3>Client Services</h3><p>Portfolio, business, database, and management solutions.</p></article>
+      <div class="footer-badges">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span
+        ><span>Spring Boot</span><span>MySQL</span><span>Git</span>
       </div>
-    </section>
-  </main>
+      <button class="back-top" data-back-top>↑ Top</button>
+      <p class="copyright">
+        Designed and Developed by Sakshi Suryawanshi. Built with HTML, CSS,
+        JavaScript, Spring Boot and MySQL. © 2026 All Rights Reserved.
+      </p>
+    </footer>
 
-  <section class="testimonials-section" id="testimonials">
-    <div class="section-heading reveal">
-      <p class="eyebrow">Testimonials</p>
-      <h2>What people say.</h2>
-    </div>
-    <div class="testimonials-grid">
-      <article class="testimonial-card reveal">
-        <div class="testimonial-quote">"Sakshi consistently demonstrates a strong understanding of both frontend and backend concepts. Her Leave Approval System showed real practical thinking and clean code structure."</div>
-        <div class="testimonial-author">
-          <div class="author-avatar">P</div>
-          <div><strong>Prof. Priya Desai</strong><span>Faculty, BCA Department</span></div>
-        </div>
-      </article>
-      <article class="testimonial-card reveal">
-        <div class="testimonial-quote">"The Cafe Billing System she built for our project submission was well-structured and actually usable. Sakshi has a great eye for both design and database logic."</div>
-        <div class="testimonial-author">
-          <div class="author-avatar">R</div>
-          <div><strong>Rohit Sharma</strong><span>Classmate & Project Collaborator</span></div>
-        </div>
-      </article>
-      <article class="testimonial-card reveal">
-        <div class="testimonial-quote">"Her SkyBook project impressed me — the PNR logic and seat availability tracking were handled better than I expected from a college-level project."</div>
-        <div class="testimonial-author">
-          <div class="author-avatar">A</div>
-          <div><strong>Amit Kulkarni</strong><span>Senior Developer & Mentor</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <a class="whatsapp-float" href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-  <footer class="premium-footer">
-    <div class="footer-grid">
-      <section><h2>Sakshi Suryawanshi</h2><p>Building practical software solutions with Java, Spring Boot and MySQL.</p><p class="status-dot">Current Status: Learning Java Full Stack Development and building real-world projects.</p></section>
-      <section><h3>Quick Links</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="index.html#skills">Skills</a><a href="projects.html">Projects</a><a href="index.html">Portfolio</a><a href="services.html">Services</a><a href="contact.html">Contact</a></section>
-      <section><h3>Featured Projects</h3><a href="leave-approval.html">Leave Approval System</a><a href="skybook.html">SkyBook Airline Reservation</a><a href="cafe-billing.html">Cafe Billing System</a></section>
-      <section><h3>Connect</h3><div class="footer-icons"><a href="https://github.com/Sakshii-18" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/sakshi-suryawanshii/" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a href="mailto:ms.sakshisuryawanshi18@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://sakshi-suryawanshiportfolio.netlify.app/" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a></div></section>
-    </div>
-    <div class="footer-badges"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Spring Boot</span><span>MySQL</span><span>Git</span></div>
-    <button class="back-top" data-back-top>↑ Top</button>
-    <p class="copyright">Designed and Developed by Sakshi Suryawanshi. Built with HTML, CSS, JavaScript, Spring Boot and MySQL. © 2026 All Rights Reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
