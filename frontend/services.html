@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "dark");</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | Sakshi Suryawanshi</title>
@@ -25,11 +26,22 @@
   </header>
 
   <main>
-    <section class="page-hero services-hero">
+    <section class="page-hero about-hero services-hero">
       <div class="reveal">
         <p class="eyebrow">Solutions I Can Create</p>
-        <h1>I specialize in Java & Spring Boot management and billing systems — portfolio and business websites are also available.</h1>
+        <h1>I specialize in Java &amp; Spring Boot management and billing systems — portfolio and business websites are also available.</h1>
         <p>Best suited for small businesses, startups and college departments that need a working internal tool — not just a static website.</p>
+      </div>
+      <div class="reveal services-terminal-wrap">
+        <div class="terminal-block" aria-label="Code terminal">
+          <div class="terminal-bar">
+            <span class="t-dot r"></span>
+            <span class="t-dot y"></span>
+            <span class="t-dot g"></span>
+            <span class="t-title">sakshi@services ~ zsh</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
       </div>
     </section>
 
@@ -72,6 +84,53 @@
       </div>
     </section>
 
+    <section class="estimator-section reveal" id="estimator">
+      <div class="section-heading">
+        <p class="eyebrow">Project Cost Estimator</p>
+        <h2>Get a rough estimate before reaching out.</h2>
+        <p>Select what your project needs — the estimate updates live.</p>
+      </div>
+      <div class="estimator-wrap">
+        <div class="estimator-options">
+          <p class="est-group-label">Project Type</p>
+          <div class="est-group" data-group="type" data-single="true">
+            <button class="est-btn active" data-cost="3000" data-time="1">Portfolio Website</button>
+            <button class="est-btn" data-cost="6000" data-time="2">Business Website</button>
+            <button class="est-btn" data-cost="10000" data-time="3">Management System</button>
+            <button class="est-btn" data-cost="14000" data-time="4">Full Stack Web App</button>
+          </div>
+          <p class="est-group-label">Features Needed <span class="est-multi-hint">(select multiple)</span></p>
+          <div class="est-group" data-group="features">
+            <button class="est-btn" data-cost="1500" data-time="0.5">Admin Panel</button>
+            <button class="est-btn" data-cost="1000" data-time="0.5">Login / Auth</button>
+            <button class="est-btn" data-cost="2000" data-time="1">Database Integration</button>
+            <button class="est-btn" data-cost="1500" data-time="0.5">PDF / Reports</button>
+            <button class="est-btn" data-cost="1000" data-time="0.5">Dashboard &amp; Charts</button>
+            <button class="est-btn" data-cost="2000" data-time="1">API Integration</button>
+            <button class="est-btn" data-cost="800"  data-time="0.3">Email Notifications</button>
+            <button class="est-btn" data-cost="500"  data-time="0.2">WhatsApp Contact</button>
+          </div>
+          <p class="est-group-label">Deployment</p>
+          <div class="est-group" data-group="deploy" data-single="true">
+            <button class="est-btn active" data-cost="0" data-time="0">Not Needed</button>
+            <button class="est-btn" data-cost="500"  data-time="0.5">Netlify (Static)</button>
+            <button class="est-btn" data-cost="1500" data-time="1">Full Stack Deploy</button>
+          </div>
+        </div>
+        <div class="estimator-result" id="estimatorResult">
+          <div class="est-label">Estimated Cost</div>
+          <div class="est-cost" id="estCost">&#8377;3,000</div>
+          <div class="est-range" id="estRange">Range: &#8377;2,500 - &#8377;4,000</div>
+          <div class="est-divider"></div>
+          <div class="est-label">Timeline</div>
+          <div class="est-time" id="estTime">1 Week</div>
+          <div class="est-divider"></div>
+          <p class="est-note">Rough estimate only. Final cost depends on exact scope discussed during consultation.</p>
+          <a class="btn primary" href="contact.html" style="margin-top:16px;width:100%;justify-content:center;">Get Exact Quote</a>
+        </div>
+      </div>
+    </section>
+
     <section class="service-enquiry-cta reveal">
       <h2>Have a Project in Mind?</h2>
       <p>Pricing depends on project scope — share your requirements in the enquiry form for a custom quote. I typically respond within 24 hours.</p>
@@ -91,7 +150,7 @@
       <section><h3>Connect</h3><div class="footer-icons"><a href="https://github.com/Sakshii-18" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/sakshi-suryawanshii/" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a href="https://wa.me/917499683725?text=Hi%20Sakshi%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a><a href="mailto:ms.sakshisuryawanshi18@gmail.com"><i class="fa-solid fa-envelope"></i></a><a href="https://sakshi-suryawanshiportfolio.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></div></section>
     </div>
     <div class="footer-badges"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Spring Boot</span><span>MySQL</span><span>Git</span></div>
-    <button class="back-top" data-back-top>↑ Top</button>
+    <button class="back-top" data-back-top aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
     <p class="copyright">Designed and Developed by Sakshi Suryawanshi. Built with HTML, CSS, JavaScript, Spring Boot and MySQL. © 2026 All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>

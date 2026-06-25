@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||"dark");</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sakshi Suryawanshi | Java Full Stack Portfolio</title>
@@ -60,15 +61,14 @@
     <main>
       <section class="hero" id="home">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="typing-text" data-typing></span></p>
           <h1>
-            Building practical web applications, management systems and business
-            solutions.
+            I build practical Java full-stack systems for real business
+            workflows.
           </h1>
           <p class="hero-text">
-            Hi, I'm Sakshi Suryawanshi — a BCA student and Java Full Stack
-            learner building real-world projects using Java, Spring Boot, MySQL
-            and modern web technologies.
+            Hi, I'm Sakshi Suryawanshi - a Java Full Stack learner building
+            useful web applications with Spring Boot, MySQL and modern frontend
+            interfaces.
           </p>
           <div class="hero-actions">
             <a class="btn primary" href="projects.html">Explore Projects</a>
@@ -157,6 +157,54 @@
         </div>
       </section>
 
+      <section class="choice-section" id="why-me">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Why Choose Me</p>
+          <h2>A calm, practical approach to building software that actually works.</h2>
+          <p>
+            I focus on clear requirements, simple user flows and clean handover
+            so every project feels useful after the first demo.
+          </p>
+        </div>
+        <div class="choice-grid">
+          <article class="choice-card reveal">
+            <i class="fa-solid fa-route"></i>
+            <h3>Workflow-first thinking</h3>
+            <p>I design around the real steps a user or business follows, not only the screen layout.</p>
+          </article>
+          <article class="choice-card reveal">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Frontend + backend clarity</h3>
+            <p>I understand the UI, Spring Boot logic and MySQL structure needed to make a complete system.</p>
+          </article>
+          <article class="choice-card reveal">
+            <i class="fa-solid fa-comments"></i>
+            <h3>Simple communication</h3>
+            <p>I keep project decisions, progress and required details easy to understand.</p>
+          </article>
+          <article class="choice-card reveal">
+            <i class="fa-solid fa-box-open"></i>
+            <h3>Clean handover</h3>
+            <p>I organize code, explain setup and provide basic documentation where the project needs it.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="provide-section" id="provide">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I Provide</p>
+          <h2>Useful project services for students, portfolios and small businesses.</h2>
+        </div>
+        <div class="provide-grid reveal">
+          <span><i class="fa-solid fa-id-card"></i> Portfolio websites</span>
+          <span><i class="fa-solid fa-store"></i> Business websites</span>
+          <span><i class="fa-solid fa-table-columns"></i> Admin dashboards</span>
+          <span><i class="fa-solid fa-database"></i> Database-backed systems</span>
+          <span><i class="fa-solid fa-file-lines"></i> Project documentation</span>
+          <span><i class="fa-solid fa-screwdriver-wrench"></i> UI improvement and bug fixing</span>
+        </div>
+      </section>
+
       <section id="skills" class="stack-section">
         <div class="section-heading reveal">
           <p class="eyebrow">Tech Stack Summary</p>
@@ -214,6 +262,40 @@
           </article>
         </div>
       </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQs</p>
+          <h2>Quick answers before starting a project.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>Can you build both frontend and backend?</summary>
+            <p>Yes. I can build responsive frontend pages and connect them with Java, Spring Boot and MySQL.</p>
+          </details>
+          <details>
+            <summary>Do you provide source code?</summary>
+            <p>Yes. I can provide organized source code with setup notes and project explanation.</p>
+          </details>
+          <details>
+            <summary>Can you improve an existing project?</summary>
+            <p>Yes. I can improve layout, fix form validation, polish UI and help make project pages more professional.</p>
+          </details>
+          <details>
+            <summary>Do you help with deployment?</summary>
+            <p>Yes. For static websites I can help with Netlify-style deployment, and for full-stack apps I can guide the setup requirements.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="home-cta reveal">
+        <p class="eyebrow">Start A Project</p>
+        <h2>Have an idea, college project or small business workflow?</h2>
+        <div class="hero-actions">
+          <a class="btn primary" href="contact.html">Send Enquiry</a>
+          <a class="btn ghost" href="projects.html">See Case Studies</a>
+        </div>
+      </section>
     </main>
 
     <section class="testimonials-section" id="testimonials">
@@ -252,7 +334,7 @@
         </article>
         <article class="testimonial-card reveal">
           <div class="testimonial-quote">
-            "Her SkyBook project impressed me — the PNR logic and seat
+            "Her SkyBook project impressed me - the PNR logic and seat
             availability tracking were handled better than I expected from a
             college-level project."
           </div>
@@ -347,10 +429,12 @@
         <span>HTML</span><span>CSS</span><span>JavaScript</span
         ><span>Spring Boot</span><span>MySQL</span><span>Git</span>
       </div>
-      <button class="back-top" data-back-top>↑ Top</button>
+      <button class="back-top" data-back-top aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
       <p class="copyright">
         Designed and Developed by Sakshi Suryawanshi. Built with HTML, CSS,
-        JavaScript, Spring Boot and MySQL. © 2026 All Rights Reserved.
+        JavaScript, Spring Boot and MySQL. &copy; 2026 All Rights Reserved.
       </p>
     </footer>
 
